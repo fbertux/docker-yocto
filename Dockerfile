@@ -14,3 +14,10 @@ RUN apt-get install openssh-server
 
 RUN mkdir /yocto
 
+RUN su -c "cd /yocto && git clone git://git.yoctoproject.org/poky -b daisy"
+
+ENTRYPOINT ["/bin/bash"]
+
+EXPOSE 22
+
+
