@@ -10,7 +10,7 @@ RUN apt-get -y upgrade
 RUN apt-get install -y gawk wget git-core diffstat unzip texinfo gcc-multilib \
     build-essential chrpath socat
 
-RUN apt-get install openssh-server
+RUN apt-get install -y openssh-server
 
 RUN mkdir /yocto
 
